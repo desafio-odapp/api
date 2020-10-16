@@ -1,5 +1,6 @@
 const express = require('express')
 const morgan = require('morgan')
+const path = require('path');
 const cors = require('cors')
 
 class App {
@@ -20,6 +21,11 @@ class App {
 
   routes () {
     this.express.use('/api', require('./routes'))
+    
+    this.express.use(express.static(path.join(__dirname, 'client/build')));
+    this.express.use('*', (req, res) => {
+      res.sendFile(path.join(__dirname+'/client/build/index.html'));
+    })
   }
 }
 
