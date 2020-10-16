@@ -1,0 +1,34 @@
+{
+  "name": "odapp-challenge-api",
+  "version": "1.0.0",
+  "description": "Desafio desenvolvimento Odapp",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^7.0.0",
+    "morgan": "^1.9.1",
+    "require-dir": "^1.2.0",
+    "sequelize": "^5.2.15",
+    "mysql2": "^1.6.5",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "chai-subset": "^1.6.0",
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "nodemon": "^1.18.11",
+    "sequelize-cli": "^5.4.0"
+  }
+}
